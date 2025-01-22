@@ -2,7 +2,30 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <Version>11.0.0</Version>
+        <AssemblyVersion>11.0.0</AssemblyVersion>
+        <FileVersion>11.0.0</FileVersion>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Title>FeatureFlags for Avalonia</Title>
+        <Authors>00jeser</Authors>
+        <Description>FeatureFlags for Avalonia is a lightweight and flexible library that enables feature flagging within your Avalonia UI applications. Using attached properties, you can conditionally control the visibility or activation of controls based on feature flags defined in your application logic.</Description>
+        <PackageProjectUrl>https://github.com/00jeser/FeatureFlags.Avalonia</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/00jeser/FeatureFlags.Avalonia</RepositoryUrl>
+        <PackageTags>feature flags avalonia mvvm axaml</PackageTags>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageIcon>logo.png</PackageIcon>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE.txt">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\logo.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="[11.0.0,)" />
